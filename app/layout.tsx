@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+
+import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Teach Nest",
-  description: "Learn skills from people just like you.",
+  title: "Evently",
+  description: "Evently is a platform for event management.",
   icons: {
     icon: "/assets/images/logo.svg",
   },
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <ClerkProvider>
       <html lang="en">

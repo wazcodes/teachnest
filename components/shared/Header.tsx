@@ -14,12 +14,12 @@ const Header = () => {
             src="/assets/images/logo.svg"
             width={128}
             height={38}
-            alt="Teach Nest Logo"
+            alt="Evently logo"
           />
         </Link>
 
         <SignedIn>
-          <nav className="hidden md:flex-between w-full max-w-xs">
+          <nav className="md:flex-between hidden w-full max-w-xs">
             <NavItems />
           </nav>
         </SignedIn>
